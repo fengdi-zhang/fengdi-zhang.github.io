@@ -17,4 +17,4 @@ This is my cat Amber dressed up for Halloween.
 Here's a direct link to the about page: [about](about.html)
 
 
-[Here's](plotly.html) a page with plotly plots.
+Here's a direct link to the dashboard page: [dashboard](dashboard.html)
