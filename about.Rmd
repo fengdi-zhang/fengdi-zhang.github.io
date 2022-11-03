@@ -1,11 +1,21 @@
 ---
-title: "About this website"
+title: "About Lily"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-# This is Lily's awesome website
+## Education
+__University of California San Diego, CA__\
+_BS in Biology; Specialization in Bioinformatics_\
+September 2018 - June 2022\
+GPA 3.90/4.00\
+__Core Course: __ Advanced Bioinformatics Lab, Data Science in Practice, Biological Databases, Advanced Data Structures, Probability Statistics, Applied Genomic Technologies, Basic Data Struct & OO Design, Algorithm and Systems Analysis, Molecular Biology, Genetics, Linear Algebra, Calculus Analytic Geometry\
+__Technical Skills: __ Python, Java, C++, R, MATLAB, Bash\
 
-This awesome website is made in rmarkdown and other stuff.
+---
+
+__Columbia University, NY__\
+_MS in Biostatistics; Specialization in Public Health Data Science_\
+September 2022 - Now\

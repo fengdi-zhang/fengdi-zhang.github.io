@@ -1,23 +1,19 @@
 ---
-title: "Plotly"
+title: "AirBNB Dashboard"
 output: 
-  html_document:
-    toc: true
-    toc_float: true
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
 
-
-We're going to make some plotly plots.
-
-## Load packages and data
-
-```{r}
+```{r setup, include=FALSE}
 library(tidyverse)
 library(p8105.datasets)
+library(flexdashboard)
 library(plotly)
 ```
 
-```{r}
+```{r, include=FALSE}
 data("nyc_airbnb")
 
 nyc_airbnb = 
@@ -33,8 +29,10 @@ nyc_airbnb =
   drop_na(rating)
 ```
 
+Column {data-width=650}
+-----------------------------------------------------------------------
 
-Let's make a scatterplot!!
+### Chart A
 
 ```{r}
 nyc_airbnb %>%
@@ -48,7 +46,10 @@ nyc_airbnb %>%
   )
 ```
 
-Can we make boxplots??
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
 
 ```{r}
 nyc_airbnb %>%
@@ -58,8 +59,7 @@ nyc_airbnb %>%
     type = "box", colors = "viridis")
 ```
 
-
-Can we make abar plot?
+### Chart C
 
 ```{r}
 nyc_airbnb %>%
@@ -70,16 +70,4 @@ nyc_airbnb %>%
     type = "bar")
 ```
 
-
-## ggplotly ...
-
-```{r}
-ggp_scatterplot = 
-nyc_airbnb %>%
-  ggplot(aes(x = lat, y = long, color = price)) +
-  geom_point()
-
-ggplotly(ggp_scatterplot)
-```
-
-easy to create, but slow interaction
+If include dashboard in a website, use build website or `rmarkdown::render("dashboard.Rmd", output_format = "flexdashboard::flex_dashboard")` in console to show dashboard properly

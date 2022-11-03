@@ -1,33 +1,20 @@
 ---
-title: "My awesome website"
+title: "Fengdi Zhang(Lily)"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-# This is Lily's awesome website
+# This is Fengdi Zhang(Lily)'s personal website.
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+Hello, I'm Fengdi Zhang(Lily). I am a biostatistics student at Columbia Mailman School of Public Health.
 
-
-Here's some text. I like the internet. I use [google](https://www.google.com/) all the time to do data science.
-
-This is my cat Amber dressed up as a bat.
+This is my cat Amber dressed up for Halloween.
 ![](images/amber.jpg)
 
 
-```{r}
-library(tidyverse)
-
-sample = rnorm(1000)
-mean(sample)
-```
-
 Here's a direct link to the about page: [about](about.html)
 
-I also made a bonus [extra page](extra_page.html)
-
-## New section!!
 
 [Here's](plotly.html) a page with plotly plots.
